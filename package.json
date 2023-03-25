@@ -17,10 +17,6 @@
     "test:headful": "npx playwright test --headed",
     "test:parallel": "npx playwright test --workers=3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/jchikwanda/practice-app-tests.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
