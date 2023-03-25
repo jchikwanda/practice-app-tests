@@ -119,23 +119,6 @@ npm run test:all
     - Timesheets
     - Payrolls
 
-## Environment Variables
-
-The following environment variables need to be set in the ```.env``` file before running the tests:
-
-- `APPURL`: The URL of the Practice Manager application.
-- `EMAIL`: The email address to use for logging in.
-- `PASSWORD`: The password to use for logging in.
-
-Here is a sample;
-
-```js
-//.env
-APPURL=https://myapp.com
-EMAIL=myemail@gmail.com
-PASSWORD=1234
-```
-
 ## Running the tests
 
 Let's learn how to run the test scripts.
