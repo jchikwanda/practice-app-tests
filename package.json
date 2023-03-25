@@ -1,0 +1,37 @@
+{
+  "name": "practice-app-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:case-management": "npx playwright test tests/case-management/*.test.js",
+    "test:intake": "npx playwright test tests/intake/*.test.js",
+    "test:tools": "npx playwright test tests/tools/*.test.js",
+    "test:staff": "npx playwright test tests/staff/*.test.js",
+    "test:finance": "npx playwright test tests/finance/*.test.js",
+    "test:all": "npx playwright test tests/**/*.test.js",
+    "test:report": "npx playwright test --reporter=list",
+    "test:report:html": "npx playwright test --reporter=html",
+    "report:open": "npx playwright show-report",
+    "test:debug": "npx playwright test --debug",
+    "test:headful": "npx playwright test --headed",
+    "test:parallel": "npx playwright test --workers=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/jchikwanda/practice-app-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jchikwanda/practice-app-tests/issues"
+  },
+  "homepage": "https://github.com/jchikwanda/practice-app-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.32.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
