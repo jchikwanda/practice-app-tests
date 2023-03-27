@@ -3,6 +3,8 @@ const handleLogin = async ({ page, data, expect }) => {
     
     // Login
     await page.goto(url);
+    await page.mainFrame().waitForSelector("//input[@placeholder='email@address.com']");
+    await page.mainFrame().waitForSelector("//input[@placeholder='password']");
     await page.type("//input[@placeholder='email@address.com']", email);
     await page.type("//input[@placeholder='password']", password);
     await page.click("//button[text()='Log In']");

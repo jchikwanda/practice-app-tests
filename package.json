@@ -15,7 +15,7 @@
     "report:open": "npx playwright show-report",
     "test:debug": "npx playwright test --debug",
     "test:headful": "npx playwright test --headed",
-    "test:parallel": "npx playwright test --workers=3"
+    "test:parallel": "npx playwright test --workers=5"
   },
   "keywords": [],
   "author": "",

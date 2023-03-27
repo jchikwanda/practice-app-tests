@@ -1,7 +1,7 @@
 const { test, expect } = require("../../fixtures/data.fixture");
 const { handleLogin } = require("../../utils");
 
-test.describe("Case Management Test Suite", () => {
+test.describe("Finance Test Suite", () => {
 
     let page;
     
