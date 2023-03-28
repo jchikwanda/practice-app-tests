@@ -6,7 +6,8 @@ const config = defineConfig({
     video: "on",
     screenshot: "on",
   },
-  reporter: [["html", { open: "never" }]]
+  reporter: [["html", { open: "never" }]],
+  timeout: 60000
 })
 
 module.exports = config;

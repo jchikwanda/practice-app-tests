@@ -1,5 +1,15 @@
+/**
+ * Handles the login process for a given page using the provided data.
+ *
+ * @async
+ * @param {Page} page - The playwright page object to interact with.
+ * @param {Object} data - The login data object with username and password properties.
+ * @param {Function} expect - The expect function to use for assertions.
+ * @returns {Promise<void>} - Resolves when the login process is completed successfully.
+ */
+
 const handleLogin = async ({ page, data, expect }) => {
-    const { url, email, password, loginFailedMessage } = data;
+    const { url, email, password } = data;
     
     // Login
     await page.goto(url);
