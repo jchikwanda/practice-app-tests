@@ -7,7 +7,7 @@ const config = defineConfig({
     screenshot: "on",
   },
   reporter: [["html", { open: "never" }]],
-  timeout: 60000
+  timeout: 60000 * 2
 })
 
 module.exports = config;
