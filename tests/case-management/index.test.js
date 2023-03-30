@@ -24,6 +24,8 @@ test.describe("Case Management Test Suite", () => {
     test.afterAll(async ({browser}) => {
         browser.close()
     })
+
+    /**** | CASE MANAGEMENT TASKS TEST STARTS HERE | ****/
     
     test("Run Add, Delete, Edit & Search Tests on Tasks Section", async () => {
         await page.getByRole('treeitem', { name: 'Tasks' }).locator('div').first().click();
@@ -40,8 +42,10 @@ test.describe("Case Management Test Suite", () => {
          /* Search Task */
          await searchTask({ page });
      })
+
+     /**** | CASE MANAGEMENT TASKS TEST ENDS HERE | ****/
     
-    /**** | CASE MANAGEMENT REPORTS TEST START HERE | ****/
+    /**** | CASE MANAGEMENT REPORTS TEST STARTS HERE | ****/
     
      test('Run Add, Delete, Edit & Search Tests on Reports Case Section', async() => { 
          await page.getByRole('treeitem', { name: 'Reports' }).locator('div').first().click();
@@ -162,5 +166,5 @@ test.describe("Case Management Test Suite", () => {
         await searchReportTE({ page });
     })
 
-    /**** | CASE MANAGEMENT REPORTS TEST END HERE | ****/
+    /**** | CASE MANAGEMENT REPORTS TEST ENDS HERE | ****/
 })
