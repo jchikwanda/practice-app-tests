@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:case-management": "npx playwright test tests/case-management/*.test.js",
+    "test:case-management": "npx playwright test tests/case-management/index.test.js",
     "test:intake": "npx playwright test tests/intake/*.test.js",
     "test:tools": "npx playwright test tests/tools/*.test.js",
     "test:staff": "npx playwright test tests/staff/*.test.js",
